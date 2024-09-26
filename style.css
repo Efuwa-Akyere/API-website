@@ -11,10 +11,18 @@ body {
     
 }
 
+nav {
+   position: fixed !important;
+   width: 100%;
+   top: 0;
+
+}
+
 .container-fluid {
     display: flex;
     flex-direction: row;
 }
+
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -50,6 +58,7 @@ body {
 .search-form {
     display: flex;
     margin-left: auto;
+
 }
 
 .search-form .form-control {
@@ -69,7 +78,7 @@ body {
 }
 
 .search-form .btn:hover {
-    background-color: green;
+    background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -84,12 +93,80 @@ body {
 
 .hero-page {
     background-image:url(/img/API\ hero.jpg);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 200px;
+    
 }
 
-#definition {
-    /* color: rgba(22, 4, 4, 0); */
+.hero-content {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 72px;
+    height: 57px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color:black ;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+nav .container-fluid{
+    display: flex;
+    width: 100% !important;
+    align-items: center;
 }
